@@ -19,6 +19,7 @@
   border: 1px solid #29d;
 
   overflow: hidden;
+  z-index: 3000;
 }
 
 .pace .pace-progress {
@@ -49,3 +50,153 @@
 .pace.pace-inactive {
   display: none;
 }
+
+#cover {
+  background: white;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2000;
+}
+
+#loading {
+  left: 40%;
+  position: absolute;
+  top: 30%;
+  z-index: 3000;
+}
+
+.loading-bubble {
+  position: fixed;
+  width: 20%;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(15%, 20%, 0);
+    transform: translate3d(15%, 10%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(15%, 20%, 0);
+    transform: translate3d(15%, 20%, 0);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeInRight {
+  animation-duration: 4.25s;
+  animation-iteration-count:infinite;
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-15%, 20%, 0);
+    transform: translate3d(-15%, 20%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-15%, 20%, 0);
+    transform: translate3d(-15%, 20%, 0);
+  }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.fadeInLeft {
+  animation-duration: 4.25s;
+  animation-iteration-count:infinite;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+  animation-timing-function: ease-out;
+}
+
+#loading-bubble01 {
+  fill: #E8534C;
+}
+
+#loading-bubble02 {
+  animation-delay: 0.75s;
+  fill: #1A7981;
+  opacity: 0;
+
+  width: 25%;
+}
+
+#loading-bubble03 {
+  animation-delay: 1.5s;
+  fill: #CAD847;
+  opacity: 0;
+
+  width: 17%;
+}
+
+#loading-bubble04 {
+  animation-delay: 2.25s;
+  fill: #74C3BD;
+  opacity: 0;
+
+  width: 22%;
+}
+
+#loading-bubble05 {
+  animation-delay: 3s;
+  fill: #F4A748;
+  opacity: 0;
+
+  width: 25%;
+}
+
+/*.pace-running > :not(.pace) {
+  opacity: 0;
+}*/

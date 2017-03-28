@@ -97,10 +97,15 @@ function sass() {
 function javascript() {
   return gulp.src(PATHS.javascript)
     .pipe($.sourcemaps.init())
-    .pipe($.babel({ignore: ['what-input.js']}))
-    .pipe($.concat('app.js'))
-    .pipe($.concat('jquery-ui.min.js'))
+    .pipe($.babel({ignore: ['what-input.js',
+    'bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+    'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js',
+    'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'    
+    ]}))
+    .pipe($.concat('map.js'))
     .pipe($.concat('pace.js'))
+    .pipe($.concat('jquery-ui.js'))
+    .pipe($.concat('app.js'))
     .pipe($.if(PRODUCTION, $.uglify()
       .on('error', e => { console.log(e); })
     ))

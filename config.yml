@@ -57,7 +57,12 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.toggler.js"
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
     - "bower_components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js"
+
+    - "bower_components/gsap/src/uncompressed/TweenLite.js"
+
+    - "bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"
+    - "bower_components/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"
+    - "bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js"
     # Paths to your own project code are here
     - "src/assets/js/!(app).js"
     - "src/assets/js/app.js"
-    - "src/assets/js/test.js"

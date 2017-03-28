@@ -4,7 +4,11 @@
 @import 'foundation';
 @import 'motion-ui';
 
+@import 'components/layout/normalize.scss';
+@import 'components/layout/landing.scss';
+@import 'components/layout/president.scss';
 @import 'components/pace/pace.scss';
+@import 'components/map/map.scss';
 
 @include foundation-global-styles;
 @include foundation-grid;
