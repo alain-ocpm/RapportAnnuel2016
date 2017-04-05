@@ -4,8 +4,12 @@
 @import 'foundation';
 @import 'motion-ui';
 
-@import 'components/layout/normalize.scss';
+@import 'stylesheet.scss';
+@import 'components/base/normalize.scss';
+@import 'components/base/colors.scss';
+@import 'components/layout/typography.scss';
 @import 'components/layout/landing.scss';
+@import 'components/layout/welcome.scss';
 @import 'components/layout/president.scss';
 @import 'components/pace/pace.scss';
 @import 'components/map/map.scss';
