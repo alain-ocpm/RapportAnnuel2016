@@ -1,0 +1,75 @@
+.whatinput-types-touch {
+  .default {
+    opacity: 1 !important;
+    transform: translate(0px,0px) !important;
+  }
+}
+
+.president-bubble01 {
+  display: none;
+}
+
+#president {
+  h1 {
+    font-size: 4.5vw;
+    left: 28vw;
+    line-height: 5.5vw;
+    margin-bottom: 40vw;
+    top: 20vw;
+    width: 50%;
+
+    &::before {
+      left: -7%;
+      top: -150%;
+    }
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .president-bubble {
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .president-bubble01 {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+
+    &.default {
+      opacity: 0;
+      transform: translate(0px,100px);
+    }
+
+    &.anim {
+      opacity: 1;
+      transform: translate(0px,0px);
+    }
+  }
+
+  #president {
+    h1 {
+      font-size: 2.7vw;
+      left: 20vw;
+      line-height: 3.5vw;
+      margin-bottom: 0;
+      top: -13vw;
+      transition-delay: 0.5s;
+      width: 30%;
+
+      &.default {
+        opacity: 0;
+        transform: translate(-100px,0px);
+      }
+
+      &.anim {
+        opacity: 1;
+        transform: translate(0px,0px);
+      }
+
+      &::before {
+        left: -7%;
+        top: -145%;
+      }
+    }
+  }
+}

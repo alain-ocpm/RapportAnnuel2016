@@ -1,0 +1,30 @@
+.text-white {
+  color: white;
+}
+
+.bubble-text {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+  z-index: 1;
+}
+
+.bubble-text::before {
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  height: 100vw;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.bubble-text-salmon::before {
+  background-image: url('../img/bubble.svg');
+}
+
+.bubble-text-sky::before {
+  background-image: url('../img/bubble_sky.svg');
+}

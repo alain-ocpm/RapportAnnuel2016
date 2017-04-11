@@ -1,0 +1,5 @@
+vert - cad847
+teal - 74c3bd
+orange - f4a748
+dark teal - 1a7981
+red - e8534c

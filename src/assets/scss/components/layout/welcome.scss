@@ -1,0 +1,54 @@
+#welcome {
+  background-color: $salmon;
+
+  h1 {
+    font-size: 8.5vw;
+    left: 28vw;
+    line-height: 3.5vw;
+    margin-bottom: 50vw;
+    top: 25vw;
+    width: 50%;
+
+    &::before {
+      left: -7%;
+      top: -550%;
+    }
+  }
+
+  p {
+    text-align: center;
+
+    &:last-child {
+      padding-bottom: 80px;
+    }
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #welcome {
+    h1 {
+      font-size: 4.5vw;
+      left: 35vw;
+      line-height: 3.5vw;
+      margin-bottom: 32vw;
+      top: 18vw;
+      transition: opacity 1s ease-out, transform 1s ease-out;
+      width: 30%;
+
+      &.default {
+        opacity: 0;
+        transform: translate(-100px,0px);
+      }
+
+      &.anim {
+        opacity: 1;
+        transform: translate(0px,0px);
+      }
+
+      &::before {
+        left: -7%;
+        top: -345%;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+/* Widget CSS */
+.ui-tooltip {
+	position: absolute;
+	max-width: 300px;
+	z-index: 9999;
+}
+
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/* *** */
+
+#map{
+  position: relative;
+}
+
+#background{
+  //background: url('https://openclipart.org/image/2400px/svg_to_png/1733/molumen-world-map-1.png');
+  //height: 1323px;
+  //width: 100%;
+}
+
+.marker {
+    background: url('http://simpleicon.com/wp-content/uploads/map-marker-14.png');
+  background-size: contain;
+  display: block;
+  height: 25px;
+  position: absolute;
+  width: 25px;
+}
+
+.marker:hover {
+  transform: scale(1.125);
+}
+
+.ui-tooltip {
+  background: red;
+  border-radius: 0px 100px 100px 100px;
+  max-width: 300px;
+  position: absolute;
+	z-index: 9999;
+}
+
+.tail {
+  height: 40px;
+  left: -25px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 25px;
+}
+
+.tail::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: 15px -15px 0 0 red;
+  position: relative;
+  top: -15px;
+  left: -52px;
+}
