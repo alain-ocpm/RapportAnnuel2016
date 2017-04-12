@@ -58,7 +58,7 @@ PATHS:
     - "bower_components/foundation-sites/js/foundation.tooltip.js"
     - "bower_components/foundation-sites/js/foundation.zf.responsiveAccordionTabs.js"
 
-    - "bower_components/gsap/src/uncompressed/TweenLite.js"
+    - "bower_components/gsap/src/uncompressed/TweenMax.js"
 
     - "bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"
     - "bower_components/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js"
