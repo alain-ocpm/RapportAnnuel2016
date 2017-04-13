@@ -1,0 +1,40 @@
+#external {
+  h1 {
+    font-size: 3.8vw;
+    left: 28vw;
+    line-height: 5vw;
+    margin-bottom: 40vw;
+    top: 21vw;
+    width: 50%;
+
+    &::before {
+      left: -7%;
+      top: -170%;
+    }
+  }
+  .section-header {
+      background-color: $teal;
+    }
+}
+
+
+@media print, screen and (min-width: 40em) {
+  #external {
+    h1 {
+      font-size: 2.5vw;
+      left: 6vw;
+      line-height: 3.5vw;
+      margin-bottom: 0;
+      top: 23vw;
+      width: 35%;
+
+      &::before {
+        left: -7%;
+        top: -175%;
+      }
+    }
+    .section-header {
+
+      }
+    }
+}
