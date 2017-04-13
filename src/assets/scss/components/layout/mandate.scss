@@ -1,20 +1,24 @@
 #mandate {
   background-color: $savana;
   overflow: hidden;
+  padding: 50px 0;
 
   .content {
     background-color: white;
     border: 15px solid $salmon;
     box-shadow: 5px 5px 0px #A13532;
-    margin-bottom: 70px;
-    margin-top: 70px;
     padding: 50px 25px;
     text-align: center;
+  }
+
+  #hand {
+    float: right;
+    width: 63%;
   }
 }
 
 @media print, screen and (min-width: 40em) {
   #mandate {
-
+    padding: 70px 0;
   }
 }
