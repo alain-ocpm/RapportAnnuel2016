@@ -1,0 +1,46 @@
+#communications {
+  h1 {
+    font-size: 3.8vw;
+    left: 28vw;
+    line-height: 5vw;
+    margin-bottom: 40vw;
+    top: 21vw;
+    width: 50%;
+
+    &::before {
+      left: -7%;
+      top: -170%;
+    }
+  }
+  .section-header {
+    #speaker {
+      left: -8vw;
+      top: -13vw;
+    }
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #communications {
+    h1 {
+      font-size: 2.5vw;
+      left: 46vw;
+      line-height: 3.5vw;
+      margin-bottom: 0;
+      top: 14vw;
+      width: 35%;
+
+      &::before {
+        left: -7%;
+        top: -190%;
+      }
+    }
+    .section-header {
+      #speaker {
+        left: 7vw;
+        top: auto;
+        width: 38vw;
+      }
+    }
+  }
+}

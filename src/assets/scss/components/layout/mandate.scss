@@ -1,0 +1,20 @@
+#mandate {
+  background-color: $savana;
+  overflow: hidden;
+
+  .content {
+    background-color: white;
+    border: 15px solid $salmon;
+    box-shadow: 5px 5px 0px #A13532;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding: 50px 25px;
+    text-align: center;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #mandate {
+
+  }
+}

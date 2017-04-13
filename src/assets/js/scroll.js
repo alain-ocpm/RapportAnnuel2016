@@ -35,4 +35,38 @@ else {
     .setTween(TweenMax.from("#president h1", 0.5, {autoAlpha: 0, x: "-=100", ease:Power1.easeOut}))
     .offset(250)
     .addTo(controller);
+
+  //Activities
+  new ScrollMagic.Scene({triggerElement: "#activities"})
+    .setTween(TweenMax.from("#activities .section-header", 0.3, {autoAlpha: 0, ease:Linear.easeNone}))
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#activities"})
+    .setTween(TweenMax.from("#activities #jar03", 0.5, {x: "-=1000", delay: 0.5, ease:Power2.easeOut}))
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#activities"})
+    .setTween(TweenMax.from("#activities #jar02", 0.5, {x: "-=1000", delay: 0.8, ease:Power2.easeOut}))
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#activities"})
+    .setTween(TweenMax.from("#activities #jar01", 0.5, {x: "-=1000", delay: 1.1, ease:Power2.easeOut}))
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#activities"})
+    .setTween(TweenMax.from("#activities h1", 0.3, {autoAlpha: 0, x: "+=100", delay: 1.5, ease:Power1.easeOut}))
+    .addTo(controller);
+
+  //Communications
+  new ScrollMagic.Scene({triggerElement: "#communications"})
+    .setTween(TweenMax.from("#communications .section-header", 0.3, {autoAlpha: 0, ease:Linear.easeNone}))
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#communications"})
+    .setTween(TweenMax.from("#communications #speaker", 0.5, {x: "-=1000", y: "+=300", delay: 0.5, ease:Power2.easeOut}))
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#communications"})
+    .setTween(TweenMax.from("#communications h1", 0.3, {autoAlpha: 0, x: "-=100", delay: 1, ease:Power1.easeOut}))
+    .addTo(controller);
 }

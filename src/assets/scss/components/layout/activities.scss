@@ -1,0 +1,70 @@
+#activities {
+  h1 {
+    font-size: 4.8vw;
+    left: 26vw;
+    line-height: 5vw;
+    margin-bottom: 40vw;
+    top: 23vw;
+    width: 50%;
+
+    &::before {
+      left: 6%;
+      top: -388%;
+      transform: scaleX(-1);
+    }
+  }
+  .section-header {
+    background-color: $salmon;
+
+    .activities-jar {
+      bottom: 1vw;
+      width: 30vw;
+    }
+    #jar01 {
+      left: 3vw;
+    }
+
+    #jar02 {
+      left: 34vw;
+    }
+
+    #jar03 {
+      left: 65vw;
+    }
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #activities {
+    h1 {
+      font-size: 3vw;
+      left: 60vw;
+      line-height: 3.5vw;
+      margin-bottom: 0;
+      top: 13vw;
+      width: 35%;
+
+      &::before {
+        left: 5%;
+        top: -356%;
+      }
+    }
+    .section-header {
+      .activities-jar {
+        bottom: 1vw;
+        width: 18vw;
+      }
+      #jar01 {
+        left: 1vw;
+      }
+
+      #jar02 {
+        left: 20vw;
+      }
+
+      #jar03 {
+        left: 39vw;
+      }
+    }
+  }
+}

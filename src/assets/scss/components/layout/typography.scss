@@ -1,3 +1,7 @@
+.uppercase {
+  text-transform: uppercase;
+}
+
 .text-white {
   color: white;
 }
@@ -26,5 +30,9 @@
 }
 
 .bubble-text-sky::before {
+  background-image: url('../img/bubble_sky.svg');
+}
+
+.bubble-text-sky-f::before {
   background-image: url('../img/bubble_sky.svg');
 }

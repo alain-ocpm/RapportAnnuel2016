@@ -1,0 +1,19 @@
+.section-header {
+  background-color: $sky;
+  height: 50vw;
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  img {
+    position: absolute;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .section-header {
+    height: 45vw;
+    margin-bottom: 70px;
+  }
+}
