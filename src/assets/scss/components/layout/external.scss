@@ -15,6 +15,17 @@
   .section-header {
       background-color: $teal;
     }
+
+    #cloud01 {
+      display: none;
+    }
+    #cloud02 {
+      top: 0;
+    }
+
+    #trail {
+      display: none;
+    }
 }
 
 
@@ -35,6 +46,33 @@
     }
     .section-header {
 
+      }
+
+      #cloud01 {
+        display: block;
+        left: 45vw;
+        top: 14vw;
+        width: 50vw;
+      }
+
+      #cloud02 {
+        left: 2vw;
+        top: 1vw;
+        transform: scaleX(-1);
+        width: 28vw;
+      }
+
+      #plane {
+        left: 65vw;
+        top: 3vw;
+        width: 30vw;
+      }
+
+      #trail {
+        display: block;
+        left: 39vw;
+        top: 20vw;
+        width: 31vw;
       }
     }
 }

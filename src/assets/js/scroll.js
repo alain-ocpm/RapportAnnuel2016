@@ -77,4 +77,7 @@ else {
   new ScrollMagic.Scene({triggerElement: "#external"})
     .setTween(TweenMax.from("#external h1", 0.3, {autoAlpha: 0, x: "-=100", delay: 0.4, ease:Power1.easeOut}))
     .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#external"})
+    .setTween(TweenMax.from("#external #cloud01", 0.3, {x: "-=100", repeat: -1, yoyo: true, ease:Linear.easeNone}))
+    .addTo(controller);
 }
