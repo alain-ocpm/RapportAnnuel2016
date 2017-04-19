@@ -69,4 +69,12 @@ else {
   new ScrollMagic.Scene({triggerElement: "#communications"})
     .setTween(TweenMax.from("#communications h1", 0.3, {autoAlpha: 0, x: "-=100", delay: 1, ease:Power1.easeOut}))
     .addTo(controller);
+
+  //external
+  new ScrollMagic.Scene({triggerElement: "#external"})
+    .setTween(TweenMax.from("#external .section-header", 0.3, {autoAlpha: 0, ease:Linear.easeNone}))
+    .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#external"})
+    .setTween(TweenMax.from("#external h1", 0.3, {autoAlpha: 0, x: "-=100", delay: 0.4, ease:Power1.easeOut}))
+    .addTo(controller);
 }

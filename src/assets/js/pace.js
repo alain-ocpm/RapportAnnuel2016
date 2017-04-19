@@ -246,7 +246,8 @@
         this.el.className = "pace pace-active";
         document.body.className = document.body.className.replace(/pace-done/g, '');
         document.body.className += ' pace-running';
-        this.el.innerHTML = '<div class="pace-progress">\n  <div class="pace-progress-inner"></div>\n</div>\n<div class="pace-activity"></div>';
+        //this.el.innerHTML = '<div class="pace-progress">\n  <div class="pace-progress-inner"></div>\n</div>\n<div class="pace-activity"></div>';
+        this.el.innerHTML = '<div class="pace-progress"><svg id="loading-bubble01" class="loading-bubble fadeInLeft" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.69 313.1"><title>Speech Bubble 01</title><path class="cls-1" d="M 208.14,0 A 156.55,156.55 0 0 0 51.59,156.56 c 0,0.45 0,0.89 0,1.34 C 51.32,249.95 21.98,313.13 0,313.13 l 208.14,0 a 156.55,156.55 0 0 0 0,-313.1 z"/></svg><svg id="loading-bubble02" class="loading-bubble fadeInRight" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.69 313.1"><title>Speech Bubble 02</title><path class="cls-1" d="M 156.55,0 A 156.55,156.55 0 0 1 313.1,156.56 c 0,0.45 0,0.89 0,1.34 0.27,92.05 29.61,155.23 51.59,155.23 l -208.14,0 a 156.55,156.55 0 1 1 0,-313.1 z"/></svg><svg id="loading-bubble03" class="loading-bubble fadeInLeft" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.69 313.1"><title>Speech Bubble 01</title><path class="cls-1" d="M 208.14,0 A 156.55,156.55 0 0 0 51.59,156.56 c 0,0.45 0,0.89 0,1.34 C 51.32,249.95 21.98,313.13 0,313.13 l 208.14,0 a 156.55,156.55 0 0 0 0,-313.1 z"/></svg><svg id="loading-bubble04" class="loading-bubble fadeInRight" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.69 313.1"><title>Speech Bubble 02</title><path class="cls-1" d="M 156.55,0 A 156.55,156.55 0 0 1 313.1,156.56 c 0,0.45 0,0.89 0,1.34 0.27,92.05 29.61,155.23 51.59,155.23 l -208.14,0 a 156.55,156.55 0 1 1 0,-313.1 z"/></svg><svg id="loading-bubble05" class="loading-bubble fadeInLeft" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.69 313.1"><title>Speech Bubble 01</title><path class="cls-1" d="M 208.14,0 A 156.55,156.55 0 0 0 51.59,156.56 c 0,0.45 0,0.89 0,1.34 C 51.32,249.95 21.98,313.13 0,313.13 l 208.14,0 a 156.55,156.55 0 0 0 0,-313.1 z"/></svg></div>';
         if (targetElement.firstChild != null) {
           targetElement.insertBefore(this.el, targetElement.firstChild);
         } else {
@@ -285,12 +286,12 @@
         return false;
       }
       el = this.getElement();
-      transform = "translate3d(" + this.progress + "%, 0, 0)";
+      /*transform = "translate3d(" + this.progress + "%, 0, 0)";
       _ref2 = ['webkitTransform', 'msTransform', 'transform'];
       for (_j = 0, _len1 = _ref2.length; _j < _len1; _j++) {
         key = _ref2[_j];
         el.children[0].style[key] = transform;
-      }
+      }*/
       if (!this.lastRenderedProgress || this.lastRenderedProgress | 0 !== this.progress | 0) {
         el.children[0].setAttribute('data-progress-text', "" + (this.progress | 0) + "%");
         if (this.progress >= 100) {
