@@ -1,4 +1,6 @@
 #activities {
+  position: relative;
+
   h1 {
     font-size: 4.8vw;
     left: 26vw;
@@ -15,6 +17,7 @@
   }
   .section-header {
     background-color: $salmon;
+    margin-bottom: 0;
 
     .activities-jar {
       bottom: 1vw;
@@ -32,10 +35,58 @@
       left: 65vw;
     }
   }
+
+  .slide {
+    height: 100vh;
+    width: 100%;
+  }
+
+  #item1 {
+    background: red;
+  }
+
+  #item2 {
+    background: green;
+  }
+
+  #item3 {
+    background: blue;
+  }
+
+  #item4 {
+    background: red;
+  }
+
+  #wrapper {
+    height:100%;
+  	background: white;
+    transition: all 250ms ease;
+  	z-index: 300;
+
+  }
+
+  .animate {
+    -webkit-transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s;
+  }
+
+  div.float-left {
+    float: left;
+  }
+
+  #slider {
+  	height: 798px; width: 100%;
+  }
+  #slider-container {
+  	height: 100%; width: 100%;
+  	overflow: hidden;
+  }
 }
 
 @media print, screen and (min-width: 40em) {
   #activities {
+    position: static;
+
     h1 {
       font-size: 3vw;
       left: 60vw;
@@ -65,6 +116,10 @@
       #jar03 {
         left: 39vw;
       }
+    }
+
+    #slider {
+      display: none;
     }
   }
 }
