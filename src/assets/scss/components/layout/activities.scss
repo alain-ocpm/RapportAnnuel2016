@@ -3,10 +3,10 @@
 
   h1 {
     font-size: 4.8vw;
-    left: 26vw;
+    left: 26%;
     line-height: 5vw;
-    margin-bottom: 40vw;
-    top: 23vw;
+    margin-bottom: 40%;
+    top: 44%;
     width: 50%;
 
     &::before {
@@ -20,40 +20,66 @@
     margin-bottom: 0;
 
     .activities-jar {
-      bottom: 1vw;
-      width: 30vw;
+      bottom: 1%;
+      width: 30%;
     }
     #jar01 {
-      left: 3vw;
+      left: 3%;
     }
 
     #jar02 {
-      left: 34vw;
+      left: 34%;
     }
 
     #jar03 {
-      left: 65vw;
+      left: 65%;
     }
   }
 
   .slide {
     height: 100vh;
+    overflow: hidden;
+    padding: 30px 50px;
     width: 100%;
   }
 
-  #item1 {
-    background: red;
+  .slide-text-container {
+    height: 200px;
+    overflow-y: scroll;
   }
 
-  #item2 {
+  .slide-header{
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 0px 2px 2px #7F7F7F;
+  }
+
+  .slide-lead{
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 0px 2px 2px #7F7F7F;
+  }
+
+  #slide1 {
+    background: url('../img/bg_ff.png');
+    background-size: 100px 100px;
+    background-color: $savana;
+  }
+
+  #slide2 {
     background: green;
   }
 
-  #item3 {
+  #slide3 {
     background: blue;
   }
 
-  #item4 {
+  #slide4 {
+    background: red;
+  }
+
+  #slide5 {
     background: red;
   }
 
@@ -75,7 +101,7 @@
   }
 
   #slider {
-  	height: 798px; width: 100%;
+  	width: 100%;
   }
   #slider-container {
   	height: 100%; width: 100%;
@@ -89,10 +115,10 @@
 
     h1 {
       font-size: 3vw;
-      left: 60vw;
+      left: 60%;
       line-height: 3.5vw;
       margin-bottom: 0;
-      top: 13vw;
+      top: 33%;
       width: 35%;
 
       &::before {
@@ -102,19 +128,19 @@
     }
     .section-header {
       .activities-jar {
-        bottom: 1vw;
-        width: 18vw;
+        bottom: 1%;
+        width: 18%;
       }
       #jar01 {
-        left: 1vw;
+        left: 1%;
       }
 
       #jar02 {
-        left: 20vw;
+        left: 20%;
       }
 
       #jar03 {
-        left: 39vw;
+        left: 39%;
       }
     }
 

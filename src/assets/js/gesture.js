@@ -2,6 +2,10 @@ var device = document.getElementById('slider');
 var wrapper = document.getElementById('wrapper');
 var slideLength = $(".slide").length;
 
+if(!/Mobi/.test(navigator.userAgent)) {
+  $(device).css("display", "none");
+}
+
 // Calculate wrapper and individual slide with
 // relative to the parent (box model ftw)
 $(wrapper).css("width", slideLength * 100 + "%");
