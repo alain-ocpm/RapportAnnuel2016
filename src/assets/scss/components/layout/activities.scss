@@ -39,8 +39,36 @@
   .slide {
     height: 100vh;
     overflow: hidden;
-    //padding: 30px 50px;
+    padding: 30px 50px;
+    position: relative;
     width: 100%;
+
+    &::before, &::after {
+      background-image: url('../img/slider_arrow.png');
+      background-size: cover;
+      content: '';
+      display: block;
+      height: 25px; width: 9px;
+      position: absolute;
+    }
+
+    &::before {
+      top: 50%; left: 10px;
+      transform: scaleX(-1) translateY(-50%);
+    }
+
+    &::after {
+      top: 50%; right: 10px;
+      transform: translateY(-50%);
+    }
+
+    &:first-child::before {
+      display: none;
+    }
+
+    &:last-child::after {
+      display: none;
+    }
   }
 
   .slide-text-container {
@@ -68,19 +96,27 @@
   }
 
   #slide2 {
-    background: green;
+    background: url('../img/bg_turc.png');
+    background-color: $teal;
+    background-size: 100px 100px;
   }
 
   #slide3 {
-    background: blue;
+    background: url('../img/bg_franc.png');
+    background-color: $sky;
+    background-size: 100px 100px;
   }
 
   #slide4 {
-    background: red;
+    background: url('../img/bg_dt.png');
+    background-color: $peach;
+    background-size: 100px 100px;
   }
 
   #slide5 {
-    background: red;
+    background: url('../img/bg_form.png');
+    background-color: $salmon;
+    background-size: 100px 100px;
   }
 
   #wrapper {
@@ -106,6 +142,20 @@
   #slider-container {
   	height: 100%; width: 100%;
   	overflow: hidden;
+  }
+
+  .modal-trigger {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+
+    &::after {
+      background-image: url('../img/silder_down.png');
+      content: '';
+      height: 64px; width: 64px;
+    }
   }
 
   .activity-header {

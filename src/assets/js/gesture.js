@@ -30,7 +30,7 @@ function snap_to(offset) {
 
   var difference;
   var minimumDiff;
-  var slideWidth = $(".slide:first-child").width();
+  var slideWidth = $(".slide:first-child").outerWidth();
   var snap;
 
   // Of all possible snap values, find out which is the closest
