@@ -57,6 +57,18 @@ else {
     .setTween(TweenMax.from("#activities h1", 0.3, {autoAlpha: 0, x: "+=100", delay: 1.5, ease:Power1.easeOut}))
     .addTo(controller);
 
+  new ScrollMagic.Scene({triggerElement: "#act-01"})
+    .setTween(TweenMax.from("#act-01 .activity-header", 0.3, {autoAlpha: 0, ease:Linear.easeNone}))
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#act-02"})
+    .setTween(TweenMax.from("#act-02 .activity-header", 0.3, {autoAlpha: 0, ease:Linear.easeNone}))
+    .addTo(controller);
+
+  new ScrollMagic.Scene({triggerElement: "#act-03"})
+    .setTween(TweenMax.from("#act-03 .activity-header", 0.3, {autoAlpha: 0, ease:Linear.easeNone}))
+    .addTo(controller);
+
   //Communications
   new ScrollMagic.Scene({triggerElement: "#communications"})
     .setTween(TweenMax.from("#communications .section-header", 0.3, {autoAlpha: 0, ease:Linear.easeNone}))

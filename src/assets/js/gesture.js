@@ -6,6 +6,10 @@ if(!/Mobi/.test(navigator.userAgent)) {
   $(device).css("display", "none");
 }
 
+else {
+  $("#activities-content").css("display", "none");
+}
+
 // Calculate wrapper and individual slide with
 // relative to the parent (box model ftw)
 $(wrapper).css("width", slideLength * 100 + "%");

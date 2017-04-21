@@ -39,7 +39,7 @@
   .slide {
     height: 100vh;
     overflow: hidden;
-    padding: 30px 50px;
+    //padding: 30px 50px;
     width: 100%;
   }
 
@@ -107,6 +107,76 @@
   	height: 100%; width: 100%;
   	overflow: hidden;
   }
+
+  .activity-header {
+    background-color: red;
+    margin-bottom: 50px;
+    padding-top: 30px;
+
+    > img {
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .activity-header-title {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: 0px 2px 2px #7F7F7F;
+  }
+
+  .activity-header-lead {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+    text-shadow: 0px 2px 2px #7F7F7F;
+    width: 60%
+  }
+
+  #act-01 {
+    .activity-header {
+      background: url('../img/bg_ff.png');
+      background-color: $savana;
+      background-size: 100px 100px;
+    }
+  }
+
+  #act-02 {
+    .activity-header {
+      background: url('../img/bg_turc.png');
+      background-color: $teal;
+      background-size: 100px 100px;
+    }
+  }
+
+  #act-03 {
+    .activity-header {
+      background: url('../img/bg_franc.png');
+      background-color: $sky;
+      background-size: 100px 100px;
+    }
+  }
+
+  #act-04 {
+    .activity-header {
+      background: url('../img/bg_dt.png');
+      background-color: $peach;
+      background-size: 100px 100px;
+    }
+  }
+
+  #act-05 {
+    .activity-header {
+      background: url('../img/bg_form.png');
+      background-color: $salmon;
+      background-size: 100px 100px;
+    }
+  }
 }
 
 @media print, screen and (min-width: 40em) {
@@ -146,6 +216,10 @@
 
     #slider {
       display: none;
+    }
+
+    .activity-header {
+      margin-bottom: 70px;
     }
   }
 }
