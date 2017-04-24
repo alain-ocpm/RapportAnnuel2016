@@ -124,7 +124,6 @@
   	background: white;
     transition: all 250ms ease;
   	z-index: 300;
-
   }
 
   .animate {
@@ -145,16 +144,22 @@
   }
 
   .modal-trigger {
+    bottom: 20px;
     color: white;
     display: block;
-    margin: 0 auto;
+    left: 0; right: 0;
+    margin: auto;
     position: absolute;
     text-align: center;
 
     &::after {
-      background-image: url('../img/silder_down.png');
+      background-image: url('../img/slider_down.png');
+      background-repeat: no-repeat;
+      background-size: 32px;
       content: '';
-      height: 64px; width: 64px;
+      display: block;
+      height: 32px; width: 32px;
+      margin: 0 auto;
     }
   }
 
