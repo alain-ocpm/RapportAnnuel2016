@@ -98,9 +98,14 @@ else {
     .setTween(TweenMax.from("#external h1", 0.3, {autoAlpha: 0, x: "-=100", delay: 0.4, ease:Power1.easeOut}))
     .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#external"})
+    .setTween(TweenMax.fromTo("#external #trail", 1, {css: {clip: "rect(0px, 0px, 0px, 0px)"}}, {css: {clip: "rect(0px, 450px, 1000px, 0px)"}, delay: 2, ease:Linear.easeNone}))
+    .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#external"})
     .setTween(TweenMax.to("#external #cloud01", 200, {x: "-=1000", repeat: -1, yoyo: true, ease:Linear.easeNone}))
     .addTo(controller);
   new ScrollMagic.Scene({triggerElement: "#external"})
     .setTween(TweenMax.to("#external #cloud02", 200, {x: "+=500", repeat: -1, yoyo: true, ease:Linear.easeNone}))
     .addTo(controller);
+
+  //Budget
 }
