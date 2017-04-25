@@ -2,7 +2,7 @@ $(function($) {
   var init = function() {
     $(".marker").tooltip({
       position: {
-        my: "left+35 center+60",
+        my: "left+30 center+35",
         at: "center top",
         collision: "none",
         using: function( position, feedback ) {
@@ -19,11 +19,15 @@ $(function($) {
   }
 
   var main = function() {
-  var posX = $('#marker01').data('pos-x');
-  var posY = $('#marker01').data('pos-y');
 
-  $('#marker01').css('left', posX + "%");
-  $('#marker01').css('top', posY + "%");
+  for(var i=0;i<$('.marker').length;i++){
+    var posX = $('#marker' + i).data('pos-x');
+    var posY = $('#marker' + i).data('pos-y');
+
+    $('#marker' + i).css('left', posX + "%");
+    $('#marker' + i).css('top', posY + "%");
+  }
+
   }
 
   init();

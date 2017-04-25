@@ -1,0 +1,78 @@
+#budget {
+  h1 {
+    font-size: 3.8vw;
+    left: 28vw;
+    line-height: 5vw;
+    margin-bottom: 40vw;
+    top: 21vw;
+    width: 50%;
+
+    &::before {
+      left: -7%;
+      top: -170%;
+    }
+  }
+  .section-header {
+      background-color: $peach;
+    }
+
+    #cloud01 {
+      display: none;
+    }
+    #cloud02 {
+      top: 0;
+    }
+
+    #trail {
+      display: none;
+    }
+}
+
+
+@media print, screen and (min-width: 40em) {
+  #budget {
+    h1 {
+      font-size: 2.5vw;
+      left: 59vw;
+      line-height: 3.5vw;
+      margin-bottom: 0;
+      top: 23vw;
+      width: 35%;
+
+      &::before {
+        left: 5%;
+        top: -175%;
+      }
+    }
+    .section-header {
+
+      }
+
+      #cloud01 {
+        display: block;
+        left: 45vw;
+        top: 14vw;
+        width: 50vw;
+      }
+
+      #cloud02 {
+        left: 2vw;
+        top: 1vw;
+        transform: scaleX(-1);
+        width: 28vw;
+      }
+
+      #plane {
+        left: 65vw;
+        top: 3vw;
+        width: 30vw;
+      }
+
+      #trail {
+        display: block;
+        left: 39vw;
+        top: 20vw;
+        width: 31vw;
+      }
+    }
+}

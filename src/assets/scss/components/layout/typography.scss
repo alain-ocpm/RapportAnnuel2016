@@ -35,8 +35,14 @@
 
 .bubble-text-sky-f::before {
   background-image: url('../img/bubble_sky.svg');
+  transform: scaleX(-1);
 }
 
 .bubble-text-peach::before {
   background-image: url('../img/bubble_peach.svg');
+}
+
+.bubble-text-savana-f::before {
+  background-image: url('../img/bubble_savana.svg');
+  transform: scaleX(-1);
 }
