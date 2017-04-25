@@ -108,4 +108,19 @@ else {
     .addTo(controller);
 
   //Budget
+  new ScrollMagic.Scene({triggerElement: "#budget"})
+    .setTween(TweenMax.from("#budget .section-header", 0.3, {autoAlpha: 0, ease:Linear.easeNone}))
+    .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#budget"})
+    .setTween(TweenMax.from("#budget h1", 0.3, {autoAlpha: 0, x: "+=100", delay: 0.4, ease:Power1.easeOut}))
+    .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#budget"})
+    .setTween(TweenMax.fromTo("#budget #bl_handle", 2.5, {css: {transform: "rotateZ(0deg)"}}, {css: {transform: "rotateZ(10deg)"}, delay: 1, ease:Power1.easeOut}))
+    .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#budget"})
+    .setTween(TweenMax.fromTo("#budget #bl_basket01", 2.5, {css: {top: "11vw"}}, {css: {top: "9vw"}, delay: 1, ease:Power1.easeOut}))
+    .addTo(controller);
+  new ScrollMagic.Scene({triggerElement: "#budget"})
+    .setTween(TweenMax.fromTo("#budget #bl_basket02", 2.5, {css: {top: "11vw"}}, {css: {top: "13vw"}, delay: 1, ease:Power1.easeOut}))
+    .addTo(controller);
 }

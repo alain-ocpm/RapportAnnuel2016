@@ -1,14 +1,14 @@
 #budget {
   h1 {
     font-size: 3.8vw;
-    left: 28vw;
+    left: 25vw;
     line-height: 5vw;
     margin-bottom: 40vw;
     top: 21vw;
     width: 50%;
 
     &::before {
-      left: -7%;
+      left: 4%;
       top: -170%;
     }
   }
@@ -16,15 +16,28 @@
       background-color: $peach;
     }
 
-    #cloud01 {
-      display: none;
-    }
-    #cloud02 {
-      top: 0;
+    #bl_foot {
+      left: 18vw;
+      top: 7vw;
+      width: 23vw;
     }
 
-    #trail {
-      display: none;
+    #bl_handle {
+      left: 11vw;
+      top: 9vw;
+      width: 37vw;
+    }
+
+    #bl_basket01 {
+      left: 4vw;
+      top: 11vw;
+      width: 18vw;
+    }
+
+    #bl_basket02 {
+      left: 37vw;
+      top: 11vw;
+      width: 18vw;
     }
 }
 
@@ -44,35 +57,29 @@
         top: -175%;
       }
     }
-    .section-header {
 
-      }
+    #bl_foot {
+      left: 18vw;
+      top: 7vw;
+      width: 23vw;
+    }
 
-      #cloud01 {
-        display: block;
-        left: 45vw;
-        top: 14vw;
-        width: 50vw;
-      }
+    #bl_handle {
+      left: 11vw;
+      top: 9vw;
+      width: 37vw;
+    }
 
-      #cloud02 {
-        left: 2vw;
-        top: 1vw;
-        transform: scaleX(-1);
-        width: 28vw;
-      }
+    #bl_basket01 {
+      left: 4vw;
+      top: 11vw;
+      width: 18vw;
+    }
 
-      #plane {
-        left: 65vw;
-        top: 3vw;
-        width: 30vw;
-      }
-
-      #trail {
-        display: block;
-        left: 39vw;
-        top: 20vw;
-        width: 31vw;
-      }
+    #bl_basket02 {
+      left: 37vw;
+      top: 11vw;
+      width: 18vw;
+    }
     }
 }
