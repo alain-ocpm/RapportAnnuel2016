@@ -1,9 +1,5 @@
-/*var img = "<div class='bg-bubble'></div>"
-
-$("#landing").append(img);*/
-
-var srcs = ["assets/img/bubble.svg", "assets/img/bubble_peach.svg", "assets/img/bubble_savana.svg", "assets/img/bubble_sky.svg", "assets/img/bubble_teal.svg"];
-var srcs_f = ["assets/img/bubble_f.svg", "assets/img/bubble_peach_f.svg", "assets/img/bubble_savana_f.svg", "assets/img/bubble_sky_f.svg", "assets/img/bubble_teal_f.svg"];
+var srcs = ["assets/img/bubble.svg", "assets/img/bubble_peach.svg", "assets/img/bubble_savana.svg", "assets/img/bubble_teal.svg"];
+var srcs_f = ["assets/img/bubble_f.svg", "assets/img/bubble_peach_f.svg", "assets/img/bubble_savana_f.svg", "assets/img/bubble_teal_f.svg"];
 
 function setSource(flipped) {
   if(flipped)
@@ -12,36 +8,27 @@ function setSource(flipped) {
     return(srcs[Math.floor(Math.random() * srcs.length)]);
 }
 
-function setClasses() {
-  if(Math.random() < 0.5)
-    return("bg-bubble");
-  else
+function setClasses(flipped) {
+  if(flipped)
     return("bg-bubble-f");
-
+  else
+    return("bg-bubble");
 }
 
 function appendImg() {
   var flipped = Math.random() < 0.5;
 
-  if(flipped){
-    $("#landing").append($("<img />")
-      .attr("src", setSource(flipped))
-      .attr("alt", "bubble")
-      .addClass("bg-bubble-f")
-      .css("width", Math.random() * 30 + 10 + "%")
-    )
-  }
+  $("#landing").append($("<img />")
+    .attr("src", setSource(flipped))
+    .attr("alt", "bubble")
+    .addClass(setClasses(flipped))
+    .css("width", Math.random() * 15 + 5 + "%")
+    .css("left", Math.random() * 80 + "%")
+    .css("top", Math.random() * 80 + "%")
+  )
 
-  else{
-    $("#landing").append($("<img />")
-      .attr("src", setSource(flipped))
-      .attr("alt", "bubble")
-      .addClass("bg-bubble")
-      .css("width", Math.random() * 30 + 10 + "%")
-    )
-  }
 
-  if(document.getElementsByClassName('bg-bubble').length >= 15)
+  if(document.getElementsByClassName('bg-bubble').length >= 30)
     clearInterval(interval);
 }
 

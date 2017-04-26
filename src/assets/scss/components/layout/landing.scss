@@ -3,20 +3,37 @@
   position: relative;
 
   h1 {
-    font-size: 3.5vw;
+    font-size: 5.5vw;
     font-weight: 300;
-    margin-bottom: 50%;
-    top: 12vw; left: 45vw;
-    width: 40%;
+    margin-bottom: 30%;
+    top: 18vw; left: 22vw;
+    width: 60%;
 
     span {
-      line-height: 10vw;
-      font-size: 10vw;
+      line-height: 15vw;
+      font-size: 18vw;
       font-weight: 600;
     }
 
     &::before {
       top: -75%;
+      left: -7%;
+    }
+  }
+
+  h2 {
+    font-size: 3.5vw;
+    font-weight: 300;
+    margin-bottom: 38%;
+    top: 15vw; left: 22vw;
+    width: 50%;
+
+    img{
+      width: 80%;
+    }
+
+    &::before {
+      top: -185%;
       left: -7%;
     }
   }
@@ -38,6 +55,38 @@
     -webkit-animation-name: landing_fadeInRight;
     animation-name: landing_fadeInRight;
     animation-timing-function: ease-out;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  #landing {
+    overflow: hidden;
+    position: relative;
+
+    h1 {
+      font-size: 3.5vw;
+      margin-bottom: 16%;
+      top: 12vw; left: 45vw;
+      width: 40%;
+
+      span {
+        line-height: 10vw;
+        font-size: 10vw;
+      }
+
+      &::before {
+        top: -75%;
+        left: -7%;
+      }
+    }
+
+    h2 {
+      font-size: 3.5vw;
+      font-weight: 300;
+      margin-bottom: 32%;
+      top: 14vw; left: 44vw;
+      width: 30%;
+    }
   }
 }
 
