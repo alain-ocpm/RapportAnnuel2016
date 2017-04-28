@@ -5,10 +5,6 @@
   }
 }
 
-.president-bubble01 {
-  display: none;
-}
-
 #president {
   h1 {
     font-size: 4.5vw;
@@ -23,15 +19,14 @@
       top: -150%;
     }
   }
+
+  #president-bubble01 {
+    display: none;
+  }
+
 }
 
 @media print, screen and (min-width: 40em) {
-  .president-bubble01 {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-  }
-
   #president {
     h1 {
       font-size: 2.7vw;
@@ -45,6 +40,12 @@
         left: -7%;
         top: -145%;
       }
+    }
+
+    #president-bubble01 {
+      display: block;
+      margin: 0 auto;
+      width: 70%;
     }
   }
 }

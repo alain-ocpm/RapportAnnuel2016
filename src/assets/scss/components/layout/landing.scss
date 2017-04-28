@@ -1,3 +1,21 @@
+header {
+  a {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    color: $teal;
+    font-size: 2vw;
+    margin: 20px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+
+    &:hover {
+      color: $sky;
+    }
+  }
+}
+
 #landing {
   overflow: hidden;
   position: relative;

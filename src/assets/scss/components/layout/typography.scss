@@ -6,23 +6,30 @@
   color: white;
 }
 
-.bubble-text {
+.bubble-text, .bubble-text-landing {
   color: white;
   font-weight: bold;
   position: relative;
   text-align: center;
   transition: opacity 1s ease-out, transform 1s ease-out;
   z-index: 1;
+
+  &::before {
+    content: '';
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
 }
 
 .bubble-text::before {
-  content: '';
-  display: block;
-  background-repeat: no-repeat;
-  height: 100vw;
-  position: absolute;
-  width: 100%;
-  z-index: -1;
+  height: 42vw;
+}
+
+.bubble-text-landing::before {
+  height: 50vw;
 }
 
 .bubble-text-salmon::before {
@@ -49,4 +56,14 @@
 .bubble-text-savana-f::before {
   background-image: url('../img/bubble_savana.svg');
   transform: scaleX(-1);
+}
+
+@media print, screen and (min-width: 40em) {
+  .bubble-text::before {
+    height: 30vw;
+  }
+
+  .bubble-text-landing::before {
+    height: 34vw;  }
+
 }
